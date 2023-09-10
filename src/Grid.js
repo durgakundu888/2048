@@ -1,4 +1,4 @@
-import seededRandom from "./seededRandom"
+import seededRandom from "./seededRandom.js"
 
 const DEFAULT_GRID_SIZE = 4
 const DEFAULT_CELL_SIZE = 19

@@ -1,18 +1,16 @@
-import { NUMBER_FORMATTER, TIME_FORMATTER } from "./formatters"
-import gameManager from "./gameManager"
-import Modal from "./Modal"
-import Grid from "./Grid"
-import Tile from "./Tile"
-import wait from "./wait"
-import {
-  startOfTomorrow,
-  differenceInDays,
-  differenceInHours,
-  differenceInMinutes,
-  differenceInSeconds,
-} from "date-fns"
-import { animateElement } from "./animation"
+import { NUMBER_FORMATTER, TIME_FORMATTER } from "./formatters.js"
+import gameManager from "./gameManager.js"
+import Modal from "./Modal.js"
+import Grid from "./Grid.js"
+import Tile from "./Tile.js"
+import wait from "./wait.js"
+import { animateElement } from "./animation.js"
 
+var startOfTomorrow = require('date-fns/startOfTomorrow')
+var differenceInDays = require('date-fns/differenceInDays')
+var differenceInHours = require('date-fns/differenceInHours')
+var differenceInMinutes = require('date-fns/differenceInMinutes')
+var differenceInSeconds = require('date-fns/differenceInSeconds')
 const RELEASE_DATE = new Date(2022, 1, 11)
 
 export default function setupModals(inputHandler) {

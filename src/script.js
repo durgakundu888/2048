@@ -1,14 +1,15 @@
 import Grid from "./Grid.js"
 import Tile from "./Tile.js"
-import InputHandler from "./InputHandler"
+import InputHandler from "./InputHandler.js"
 import gameManager from "./gameManager.js"
-import { isToday, isYesterday } from "date-fns"
 import wait from "./wait.js"
 import setupModals from "./setupModals.js"
 import { NUMBER_FORMATTER } from "./formatters.js"
-import InvalidMoveError from "./InvalidMoveError"
+import InvalidMoveError from "./InvalidMoveError.js"
 import { animateElement, waitForAnimation } from "./animation.js"
 
+var isToday = require('date-fns/isToday')
+var isYesterday = require('date-fns/isYesterday')
 const gameBoard = document.getElementById("main-game")
 const scoreElem = document.querySelector("[data-score]")
 const scoreAmountElem = document.querySelector("[data-score-amount]")

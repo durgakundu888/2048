@@ -1,7 +1,7 @@
-import gameManager from "./gameManager"
-import seedrandom from "seedrandom"
-import { startOfDay } from "date-fns"
+import gameManager from "./gameManager.js"
 
+const seedrandom = require('seedrandom')
+var startOfDay = require('date-fns/startOfDay')
 let seededRandom
 if (gameManager.currentGame.seedState == null) {
   seededRandom = seedrandom(startOfDay(new Date()), { state: true })

@@ -1,5 +1,5 @@
-import { animateElement, waitForAnimation } from "./animation"
-import seededRandom from "./seededRandom"
+import { animateElement, waitForAnimation } from "./animation.js"
+import seededRandom from "./seededRandom.js"
 
 export default class Tile {
   #value

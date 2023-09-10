@@ -1,8 +1,8 @@
-import { isToday } from "date-fns"
-import defaultsDeep from "lodash/fp/defaultsDeep"
-import DeepProxy from "proxy-deep"
-import seededRandom from "./seededRandom"
+import seededRandom from "./seededRandom.js"
 
+const DeepProxy = require('proxy-deep');
+var defaultsDeep = require('lodash.defaultsdeep');
+var isToday = require('date-fns/isToday')
 const defaultCurrentGame = { score: 0, tiles: [], date: new Date() }
 const defaultGameState = {
   userSettings: {

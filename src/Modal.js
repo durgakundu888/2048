@@ -1,4 +1,4 @@
-import { waitForAnimation } from "./animation"
+import { waitForAnimation } from "./animation.js"
 
 const focusableElementsSelector =
   'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'

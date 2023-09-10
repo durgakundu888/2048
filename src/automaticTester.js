@@ -1,6 +1,6 @@
-import wait from "./wait"
-import { animateElement } from "./animation"
-import Tile from "./Tile"
+import wait from "./wait.js"
+import { animateElement } from "./animation.js"
+import Tile from "./Tile.js"
 
 const gameBoard = document.getElementById("main-game")
 export async function startTest(grid, scoreElement) {
